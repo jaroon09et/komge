@@ -6,3 +6,8 @@ Run `git push heroku master` to create a new release using this buildpack.
 
 
 $ heroku create myapp --buildpack heroku/php
+{
+  {
+    web: heroku-php-apache2;}
+       }
+ }
