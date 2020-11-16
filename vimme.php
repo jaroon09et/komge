@@ -37,7 +37,7 @@ $POST_HEADER = array('Content-Type: application/json', 'Authorization: Bearer ' 
 
 $request = file_get_contents('php://input');   // Get request content
 $request_array = json_decode($request, true);   // Decode JSON to Array
-
+$ web: heroku-php-apache2
 
 $ heroku buildpacks:set heroku/php
 Buildpack set. Next release on random-app-1234 will use heroku/php.
