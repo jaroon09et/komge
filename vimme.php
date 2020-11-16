@@ -39,6 +39,13 @@ $request = file_get_contents('php://input');   // Get request content
 $request_array = json_decode($request, true);   // Decode JSON to Array
 
 
+$ heroku buildpacks:set heroku/php
+Buildpack set. Next release on random-app-1234 will use heroku/php.
+Run `git push heroku master` to create a new release using this buildpack.
+
+
+$ heroku create myapp --buildpack heroku/php
+
 
 if ( sizeof($request_array['events']) > 0 ) {
 
